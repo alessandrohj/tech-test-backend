@@ -1,6 +1,6 @@
 import express from 'express'
 import morgan from 'morgan'
-// import peopleRouter from './routes/people.js'
+import userRouter from './routes/users.js'
 
 
 
@@ -11,6 +11,6 @@ app.use(express.json())
 
 
 //routes
-// app.use('/api/people', peopleRouter)
+app.use('/api/users', userRouter)
 
 export default app
